@@ -10,7 +10,9 @@ To run the program:
 
 ## Configure and Customize
 
-
+the setup directory contains a folder called package_lists. This directory contains all the info required for installing packages. The directory contains multiple files, designating the packages to be installed by the appropriate package manager.
+*universal is for packages that are not distro specific
+*group is for preconfigured groups, allowing the user to uncomment a line to install packages related to that group
 
 ## To-Do
 
