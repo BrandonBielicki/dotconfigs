@@ -1,12 +1,16 @@
 # Dotconfigs
 
-A framework for auto-configuring a linux system
+A framework for auto-configuring linux systems and syncing configurations between machines
 
 ## Running
 
 To run the program:
     
     sudo ./build {user}
+    
+To copy current configuration into repository:
+
+    sudo ./package
 
 ## Configure and Customize
 
