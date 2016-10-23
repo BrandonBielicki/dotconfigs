@@ -1,0 +1,28 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+  "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
+
+<Menu>
+    <Name>Xfce</Name>
+
+    <DefaultAppDirs/>
+    <DefaultDirectoryDirs/>
+    <DefaultMergeDirs/>
+
+    <Include>
+        <Filename>xfce4-session-logout.desktop</Filename>
+        <Filename>xfce-settings-manager.desktop</Filename>
+        <Filename>xfce4-taskmanager.desktop</Filename>
+    </Include>
+
+    <Layout>
+        <Filename>xfce4-session-logout.desktop</Filename>
+        <Separator/>
+        <Filename>xfce-settings-manager.desktop</Filename>
+        <Separator/>
+        <Filename>galculator.desktop</Filename>
+        <Filename>gnome-disks.desktop</Filename>
+        <Filename>xfce4-taskmanager.desktop</Filename>
+        <Filename>gparted.desktop</Filename>
+    </Layout>
+
+</Menu>

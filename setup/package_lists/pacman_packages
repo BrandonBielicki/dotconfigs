@@ -1,0 +1,21 @@
+tor
+openssl
+chromium
+libreoffice-fresh
+libpcap
+python
+python-pip
+xorg
+xorg-drivers
+pulseaudio-alsa
+networkmanager
+network-manager-applet
+fakeroot
+patch
+sudo
+iw
+wpa_supplicant
+dialog
+[AUR] google-chrome https://aur.archlinux.org/google-chrome.git
+[AUR] dropbox https://aur.archlinux.org/dropbox.git
+[AUR] komodo-edit https://aur.archlinux.org/komodo-edit.git

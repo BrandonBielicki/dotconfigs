@@ -1,0 +1,1 @@
+files/.config/example/** filter=git-crypt diff=git-crypt

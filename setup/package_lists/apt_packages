@@ -1,0 +1,14 @@
+libssl-dev
+nautilus-dropbox
+chromium-browser
+libreoffice
+software-properties-common
+python3-software-properties
+libpcap-dev
+build-essentials
+python3
+python3-pip
+komodo-edit
+tor 
+deb.torproject.org-keyring
+tor-browser
