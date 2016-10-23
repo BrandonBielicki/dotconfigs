@@ -1,16 +1,22 @@
 # Dotconfigs
 
-A framework for auto-configuring a linux system
+A framework for auto-configuring linux systems and syncing configurations between machines
 
 ## Running
 
 To run the program:
     
     sudo ./build {user}
+    
+To copy current configuration into repository:
+
+    sudo ./package
 
 ## Configure and Customize
 
-
+the setup directory contains a folder called package_lists. This directory contains all the info required for installing packages. The directory contains multiple files, designating the packages to be installed by the appropriate package manager.
+- universal is for packages that are not distro specific
+- group is for preconfigured groups, allowing the user to uncomment a line to install packages related to that group
 
 ## To-Do
 

@@ -1,18 +1,5 @@
 #! /bin/sh
 
-#CREATE=false
-#while getopts ":c" OPTION; do
-#    case $OPTION in
-#        c)
-#            CREATE=true
-#            ;;
-#        \?)
-#            echo "pass c to create user with default configs"
-#            exit
-#            ;;
-#    esac
-#done
-
 if [ "$EUID" -ne 0 ]
   then echo "Please run as root"
   exit
@@ -24,12 +11,6 @@ if [ -z "$1" ]; then
     exit
 fi
 USER=$1
-
-#if [ "$CREATE" = "true"]; then
-#    echo "Creating user $1"
-#else
-#    echo "Building as user $1"
-#fi
 
 HOMEDIR="$(eval echo ~$USER)"
 
@@ -54,7 +35,6 @@ fi
 echo "Source Directory: $SRCDIR" >> $LOGFILE
 echo "Home Directory: $HOMEDIR" >> $LOGFILE
 chown $USER:users $LOGFILE
-#chmod 755 $LOGFILE
 
 # Make home bin directory
 if [ ! -d "$HOMEDIR/bin" ]; then
