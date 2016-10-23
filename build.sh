@@ -31,6 +31,10 @@ if [ -f "$SRCDIR/logs/log" ]; then
     echo Logfile exists, deleting
     rm "$SRCDIR/logs/log"
 fi
+if [ -f "$SRCDIR/logs/packages" ]; then
+    echo packages log exists, deleting
+    rm "$SRCDIR/logs/packages"
+fi
 
 echo "Source Directory: $SRCDIR" >> $LOGFILE
 echo "Home Directory: $HOMEDIR" >> $LOGFILE

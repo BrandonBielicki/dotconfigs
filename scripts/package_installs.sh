@@ -126,8 +126,9 @@ fileByLine ../setup/package_lists/universal_packages
 while read -r ITEM || [ -n "$ITEM" ]; do
     echo "  Installing packages from group $ITEM" >> $LOGFILE
     case "$ITEM" in \#*) continue ;; esac
-    fileByLine ../setup/package_lists/.groups/$GROUPDIR/$ITEM
-    fileByLine ../setup/package_lists/.groups/$ITEM
+    ../setup/package_lists/.groups/$GROUPDIR/$ITEM/pre_$ITEM.sh
+    fileByLine ../setup/package_lists/.groups/$GROUPDIR/$ITEM/$ITEM
+    ../setup/package_lists/.groups/$GROUPDIR/$ITEM/post_$ITEM.sh
 done < ../setup/package_lists/group_packages
 
 cd $SRCDIR
