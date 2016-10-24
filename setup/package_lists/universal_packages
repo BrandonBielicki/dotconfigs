@@ -2,8 +2,6 @@ thunderbird
 bash-completion
 git
 gnupg
-xfce4
-xfce4-goodies
 hexchat
 terminator
 light-locker
@@ -13,8 +11,6 @@ p7zip
 unrar
 unzip
 vlc
-lightdm
-lightdm-gtk-greeter
 gnome-keyring
 gcc
 make
