@@ -9,8 +9,6 @@ HOMEDIR="$(eval echo ~$USER)"
 echo "  Running as user $USER" >> $LOGFILE
 echo "  $USER's home directory: $HOMEDIR" >> $LOGFILE
 
-#~/bin/git-crypt/git-crypt unlock
-
 su $USER --session-command "xfconf-query -c pointers -p /ETPS2_Elantech_Touchpad/Properties/Synaptics_Tap_Action -n -t int -t int -t int -t int -t int -t int -t int  -s 0 -s 0 -s 0 -s 0 -s 1 -s 3 -s 2"
 su $USER --session-command "xfconf-query -c pointers -p /ETPS2_Elantech_Touchpad/Properties/libinput_Tapping_Enabled -n -t int -s 1"
 
@@ -20,13 +18,6 @@ su $USER --session-command "xfconf-query -c xfce4-keyboard-shortcuts -p '/comman
 
 sudo systemctl set-default graphical.target
 sudo systemctl enable NetworkManager.service
-sudo systemctl enable lightdm.service
-
-if grep -Fxq "greeter-session = lightdm-gtk-greeter" /etc/lightdm/lightdm.conf; then
-    echo "  Lightdm-gtk-greeter already configured" >> $LOGFILE
-else
-    sudo bash -c 'echo "greeter-session = lightdm-gtk-greeter" >> /etc/lightdm/lightdm.conf'
-fi
 
 git config --global user.email "Brandonbielicki@gmail.com"
 git config --global user.name "Brandon Bielicki"

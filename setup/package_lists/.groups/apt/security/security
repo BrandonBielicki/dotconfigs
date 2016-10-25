@@ -1,0 +1,15 @@
+libssl-dev
+libpcap-dev
+tor 
+deb.torproject.org-keyring
+tor-browser
+mitmproxy
+dsniff
+aircrack-ng
+nmap
+hydra
+sqlmap
+reaver
+john
+[GIT] pixiewps https://github.com/wiire/pixiewps.git src
+[GIT] bully https://github.com/aanarchyy/bully.git src
