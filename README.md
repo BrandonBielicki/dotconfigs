@@ -28,3 +28,4 @@ the setup directory contains a folder called package_lists. This directory conta
 - [ ] Remove personal settings and configure as template
 - [x] One install script for packages, git, aur. [GIT] [AUR] prefixes to designate
 - [x] A log file with a list of each package attempted to be installed, and if succesful
+- [ ] split package file into sections to skip using work folder
