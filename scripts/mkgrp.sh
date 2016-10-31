@@ -11,6 +11,9 @@ for D in *; do
         chmod +x post_$1.sh
         echo "#! /bin/sh" > pre_$1.sh
         echo "#! /bin/sh" > post_$1.sh
+        for PACKAGE in ${@:2}; do
+            echo $PACKAGE >> $1
+        done
         cd ../..
     fi
 done

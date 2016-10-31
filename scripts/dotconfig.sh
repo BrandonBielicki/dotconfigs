@@ -11,7 +11,7 @@ echo "  $USER's home directory: $HOMEDIR" >> $LOGFILE
 
 
 cd $SRCDIR/../files
-su $USER --session-command "cp -R . $HOMEDIR/"
+su $USER -c "cp -R . $HOMEDIR/"
 
 if [ $? = 0 ]; then
     cd $SRCDIR

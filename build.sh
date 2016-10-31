@@ -43,9 +43,9 @@ chown $USER:users $LOGFILE
 # Make home bin directory
 if [ ! -d "$HOMEDIR/bin" ]; then
     echo "No home bin directory... creating now" >> $LOGFILE
-    su $USER --session-command "mkdir $HOMEDIR/bin"
+    su $USER -c "mkdir $HOMEDIR/bin"
     echo "Make $HOMEDIR/bin status: $?" >> $LOGFILE
-    su $USER --session-command "mkdir $HOMEDIR/bin/src"
+    su $USER -c "mkdir $HOMEDIR/bin/src"
     echo "Make $HOMEDIR/bin/src status: $?" >> $LOGFILE
 else
     echo "Home bin directory already installed" >> $LOGFILE

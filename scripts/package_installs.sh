@@ -32,11 +32,11 @@ function gitInstall {
         RETDIR=$PWD
         echo "  Installing $1..." >> $LOGFILE
         cd $HOMEDIR/bin
-        su $USER --session-command "git clone $2 $1.d"
+        su $USER -c "git clone $2 $1.d"
         cd $1.d/$3
         echo "  Installing to $PWD" >> $LOGFILE
-        su $USER --session-command "make"
-        su $USER --session-command "cp $HOMEDIR/bin/$1.d/$3/$1 $HOMEDIR/bin/"
+        su $USER -c "make"
+        su $USER -c "cp $HOMEDIR/bin/$1.d/$3/$1 $HOMEDIR/bin/"
         if [ -f "$HOMEDIR/bin/$1" ]; then
             echo "$1 Installed" >> $PACKAGESLOG
         else
@@ -62,10 +62,10 @@ function aurInstall {
         RETDIR=$PWD
         echo "  Installing $1..." >> $LOGFILE
         cd $HOMEDIR/bin/src
-        su $USER --session-command "git clone $2 $1.d"
+        su $USER -c "git clone $2 $1.d"
         cd $1.d
         echo "  Installing to $PWD" >> $LOGFILE
-        su $USER --session-command "makepkg -sri --needed --noconfirm"
+        su $USER -c "makepkg -sri --needed --noconfirm"
         if [ $? = 0 ]; then
             echo "$1 Installed" >> $PACKAGESLOG
         else
