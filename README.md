@@ -1,16 +1,18 @@
 # Dotconfigs (Unstable)
 
-A framework for auto-configuring linux systems and syncing configurations between machines
+A framework for auto-configuring linux systems and syncing configurations between machines.
+
+*WARNING* This is in early developement, and nowhere near perfect! I am working on making it more stable and easier to install package groups to auto configure a machine.
 
 ## Running
 
 To run the program:
     
-    sudo ./build {user}
+    sudo ./build.sh {user}
     
 To copy current configuration into repository:
 
-    sudo ./package
+    sudo ./package.sh
 
 ## Configure and Customize
 
